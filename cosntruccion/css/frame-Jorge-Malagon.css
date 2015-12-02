@@ -1,0 +1,180 @@
+/* Diseño móvil: 480 px e inferior. */
+
+.Container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#wrapper {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/*  -----------
+	L A Y O U T
+	-----------
+*/
+
+
+/*-------------------
+	C O L U M N A S   
+---------------------*/
+.visible-desk { display: none; }
+.visible-mobile { display: block; }
+.row-jm { width: 95%; margin: 0px auto; padding: 0; clear: both; }
+.jm-box-1 { width: 100%; padding: 0; margin: 0; }
+.jm-box-2 { width: 100%; padding: 0; margin: 0; }
+.jm-box-2-1 { width: 100%; padding: 0; margin: 0; }
+.jm-box-3 { width: 100%; padding: 0; margin: 0; }
+.jm-box-3-1 { width: 100%; padding: 0; margin: 0; }
+.jm-box-4 { width: 100%; padding: 0; margin: 0; }
+.jm-box-4-1 { width: 100%; padding: 0; margin: 0; }
+.jm-box-6-pr { width: 100%; padding: 0; margin: 0; }
+.jm-box-7 { width: 100%; padding: 0; margin: 0; }
+
+/* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
+
+@media only screen and (min-width: 481px) {
+.Container {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#wrapper {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/*-------------------
+	C O L U M N A S   
+---------------------*/
+.visible-desk { display: none; }
+.visible-mobile { display: block; }
+.jm-box-1 { width: 100%; }
+.jm-box-2 { width: 50%; }
+.jm-box-2-1 { width: 20%; }
+.jm-box-3 { width: 100%; }
+.jm-box-3-1 { width: 30%; }
+.jm-box-4 { width: 50%; }
+.jm-box-4-1 { width: 40%; }
+.jm-box-6-pr { width: 60%; }
+.jm-box-7 { width: 70%; }
+
+/*.jm-box-1 { width: 100%; }
+.jm-box-2 { width: 50%; }
+.jm-box-2-1 { width: 20%; }
+.jm-box-3 { width: 33.33%; }
+.jm-box-3-1 { width: 30%; }
+.jm-box-4 { width: 25%; }
+.jm-box-4-1 { width: 40%; }
+.jm-box-6-pr { width: 60%; }
+.jm-box-7 { width: 70%; }*/
+}
+
+/* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
+
+@media only screen and (min-width: 769px) {
+.Container {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#wrapper {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/*-------------------
+	C O L U M N A S   
+---------------------*/
+.visible-desk { display: block; }
+.visible-mobile { display: none; }
+.jm-box-1 { width: 100%; }
+.jm-box-2 { width: 50%; }
+.jm-box-2-1 { width: 20%; }
+.jm-box-3 { width: 33.33%; }
+.jm-box-3-1 { width: 30%; }
+.jm-box-4 { width: 25%; }
+.jm-box-4-1 { width: 40%; }
+.jm-box-6-pr { width: 60%; }
+.jm-box-7 { width: 70%; }
+}
+
+/*mediaquery desktop 2*/
+@media only screen and (min-width: 1025px) {
+.Container {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#wrapper {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/*-------------------
+	C O L U M N A S   
+---------------------*/
+.visible-desk { display: block; }
+.visible-mobile { display: none; }
+.jm-box-1 { width: 100%; }
+.jm-box-2 { width: 50%; }
+.jm-box-2-1 { width: 20%; }
+.jm-box-3 { width: 33.33%; }
+.jm-box-3-1 { width: 30%; }
+.jm-box-4 { width: 25%; }
+.jm-box-4-1 { width: 40%; }
+.jm-box-6-pr { width: 60%; }
+.jm-box-7 { width: 70%; }
+}
+
+/*mediaquery desktop 2*/
+@media only screen and (min-width: 1281px) {
+.Container {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#wrapper {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/*-------------------
+	C O L U M N A S   
+---------------------*/
+.visible-desk { display: block; }
+.visible-mobile { display: none; }
+.jm-box-1 { width: 100%; }
+.jm-box-2 { width: 50%; }
+.jm-box-2-1 { width: 20%; }
+.jm-box-3 { width: 33.33%; }
+.jm-box-3-1 { width: 30%; }
+.jm-box-4 { width: 25%; }
+.jm-box-4-1 { width: 40%; }
+.jm-box-6-pr { width: 60%; }
+.jm-box-7 { width: 70%; }
+}
