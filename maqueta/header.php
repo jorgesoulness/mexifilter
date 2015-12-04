@@ -75,9 +75,9 @@ define("CARPETA", $srvr);
 				  			<div id="menuMobile" class="MobileMenuCont visible-xs"><a class="menu--bars"><i class="fa fa-bars"></i></a></div><!-- end.btnMobile -->
 			  			</div><!-- end.Menu -->
 			  			<div class="col-sm-12 col-md-3 searchCont">
-				  			<form method="get" name="buscaForm" id="buscaForm" action="/search" class="form-inline">
-					  			<input type="text" id="search-form" name="q" placeholder="Type Search...."required/>
-					  			<button type="submit" value="search"><i class="fa fa-search"></i></button> 
+				  			<form method="get" name="buscaForm" id="buscaForm" action="/search" class="search-form">
+					  			<input type="text" id="search-form" name="q" placeholder="Buscar..."required/>
+					  			<button type="submit" value="search"><i class="fa fa-search"></i></button>
 				  			</form>
 			  			</div><!-- end.Search -->
 		  			</div>
