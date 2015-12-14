@@ -8,7 +8,7 @@ define("CARPETA", $srvr);
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mexifilter</title>
+        <title>Mexifilter</title> 
         <meta name="description" content="">
 		<meta name="keywords" content="">
 		<meta name="author" content="">
@@ -46,8 +46,34 @@ define("CARPETA", $srvr);
 			</div><!-- end.loadSlide -->
 	        <div id="slides">
 				<div class="slides-container">
-					<img src="<?php echo CARPETA; ?>img/slider_home/Slide_home.jpg" alt="Cinelli">
-					<img src="<?php echo CARPETA; ?>img/slider_home/Slide_home2.jpg" alt="Surly">
+					<li>
+						<img src="<?php echo CARPETA; ?>img/slider_home/Slide_home.jpg" alt="Cinelli">
+						<div class="slideContainer hidden-xs">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-6">
+										<img src="<?php echo CARPETA; ?>img/logo_mexi_slide.png" alt="">
+						          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						          		<a class="btn btn-primary btn_mxGenerci" href="">Contacto</a>
+									</div><!-- end.infoSlide -->
+								</div><!-- end.row -->
+					        </div><!-- end.container -->
+				        </div>
+					</li><!-- end.slide -->
+					<li>
+						<img src="<?php echo CARPETA; ?>img/slider_home/Slide_home2.jpg" alt="Surly">
+						<div class="slideContainer hidden-xs">
+							<div class="container"> 
+								<div class="row">
+									<div class="col-md-6 col-md-offset-6">
+										<img src="<?php echo CARPETA; ?>img/logo_mexi_slide.png" alt="">
+						          		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						          		<a class="btn btn-primary btn_mxGenerci" href="">Contacto</a>
+									</div><!-- end.infoSlide -->
+								</div><!-- end.row -->
+					        </div><!-- end.container -->
+				        </div>
+					</li><!-- end.slide -->
 	    		</div><!-- end.imgSlider -->
 
 			    <nav class="slides-navigation">
@@ -59,27 +85,30 @@ define("CARPETA", $srvr);
   			<div class="contHeaderTools">
 	  			<div class="container-fluid">
 		  			<div class="row">
-			  			<div class="col-sm-4 col-md-2 logo">
+			  			<div class="col-xs-3 col-sm-3 col-md-2 logo">
 				  			<h1><a href=""><img src="img/Logop.png" alt="Mexifilter"></a></h1>
 			  			</div><!-- end.Logo -->
-			  			<div class="col-sm-8 col-md-7 menuCont">
-				  			<nav id="navigationCont">
-					  			<ul>
-						  			<li><a href="">Nosotros</a></li>
-						  			<li><a href="">Productos</a></li>
-						  			<li><a href="">Servicios</a></li>
-						  			<li><a href="">Galería</a></li>
-						  			<li><a href="">Contacto</a></li>
-					  			</ul>
-				  			</nav>
-				  			<div id="menuMobile" class="MobileMenuCont visible-xs"><a class="menu--bars"><i class="fa fa-bars"></i></a></div><!-- end.btnMobile -->
+			  			<div class="col-xs-8 col-sm-9 col-md-10">
+			  				<div class="searchCont">
+					  			<form method="get" name="buscaForm" id="buscaForm" action="/search" class="search-form">
+						  			<input type="text" id="search-form" name="q" placeholder="Buscar..."required/>
+						  			<button type="submit" value="search"><i class="fa fa-search"></i></button>
+					  			</form>
+				  			</div><!-- end.Search -->
+			  				<div class="clearfix visible-sm-block"></div>
+				  			<div class="menuCont">
+					  			<nav id="navigationCont">
+						  			<ul>
+							  			<li><a class="hvr-underline-from-center" href="">Nosotros</a></li>
+							  			<li><a class="hvr-underline-from-center" href="">Productos</a></li>
+							  			<li><a class="hvr-underline-from-center" href="">Servicios</a></li>
+							  			<li><a class="hvr-underline-from-center" href="">Galería</a></li>
+							  			<li><a class="hvr-underline-from-center" href="">Contacto</a></li>
+						  			</ul>
+					  			</nav>
+					  			<div id="menuMobile" class="MobileMenuCont visible-xs"><a class="menu--bars"><i class="fa fa-bars"></i></a></div><!-- end.btnMobile -->
+					  		</div>
 			  			</div><!-- end.Menu -->
-			  			<div class="col-sm-12 col-md-3 searchCont">
-				  			<form method="get" name="buscaForm" id="buscaForm" action="/search" class="search-form">
-					  			<input type="text" id="search-form" name="q" placeholder="Buscar..."required/>
-					  			<button type="submit" value="search"><i class="fa fa-search"></i></button>
-				  			</form>
-			  			</div><!-- end.Search -->
 		  			</div>
 	  			</div>
   			</div><!-- end.LogoMenuSearch -->

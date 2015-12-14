@@ -7,8 +7,8 @@
         <script>window.jQuery || document.write('<script src="<?php echo CARPETA; ?>js/vendor/jquery-2.1.4.min.js"><\/script>')</script>
         <script src="<?php echo CARPETA; ?>js/vendor/jquery.easing.1.3.js"></script>
         <script src="<?php echo CARPETA; ?>js/vendor/jquery.animate-enhanced.min.js"></script>
-        <script src="<?php echo CARPETA; ?>js/plugins/wow.min.js"></script>
         <script src="<?php echo CARPETA; ?>js/plugins/bootstrap.min.js"></script>
+        <script src="<?php echo CARPETA; ?>js/plugins/wow.min.js"></script>
         <script src="<?php echo CARPETA; ?>js/plugins/jquery.superslides.min.js"></script>
         <script src="<?php echo CARPETA; ?>js/plugins.js"></script>
         <script src="<?php echo CARPETA; ?>js/main.js"></script>
