@@ -36,7 +36,7 @@
 				<div class="generiContent">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4 col-md-offset-4">
+							<div class="col-md-4">
 								<h2>Garantía</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
 								<a class="btn btn-primary btn_mxGenerci" href="">Contacto</a>
@@ -54,25 +54,52 @@
 								<h2>Clientes</h2>
 							</div>
 						</div><!-- end.rowTíttulo -->
+                        <div class="clear h30"></div>
 						<div class="row">
 							
-							<div class="col-md-3">
-								<a href=""><img src="" alt=""></a>
+							<div class="col-xs-6 col-sm-3 col-md-3">
+								<a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
 							</div>
-							<div class="col-md-3">
-								<a href=""><img src="" alt=""></a>
+							<div class="col-xs-6 col-sm-3 col-md-3">
+								<a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
 							</div>
-							<div class="col-md-3">
-								<a href=""><img src="" alt=""></a>
+							<div class="col-xs-6 col-sm-3 col-md-3">
+								<a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
 							</div>
-							<div class="col-md-3">
-								<a href=""><img src="" alt=""></a>
+							<div class="col-xs-6 col-sm-3 col-md-3">
+								<a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
 							</div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
+                            </div>
+                            <div class="col-xs-6 col-sm-3 col-md-3">
+                                <a href=""><img class="centerImg" src="<?php echo CARPETA; ?>img/logoDemo.jpg" alt=""></a>
+                            </div>
 							
 						</div><!-- end.clientesImgs -->
 					</div><!-- end.container -->
 				</div><!-- end.GenericContent -->
 			</section><!-- end.clientes -->
+
+            <section id="testimonios">
+                <div class="overlayBlue"></div>
+                <div class="generiContent">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2">
+                                <h2>Testimonios</h2>
+                                <p>“Mexifilter es una empresa en la que puedo confiar, siempre asesorandome en cuanto a filtros se refiere y nunca me han dejado dudas, una gran empresa para invertir en filtros.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 			
 		</main><!-- end.Main -->
 		

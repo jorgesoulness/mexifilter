@@ -1,6 +1,24 @@
         
         <footer>
-            
+            <div class="generiContent">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3 col-md-3 logoFooter">
+                            <a href=""><img src="<?php echo CARPETA; ?>img/logo_footer.png" alt="Mexifilter"></a>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <p>Dirección: Democracias #48 Col. San Miguel Amantla<br>C.P 02700  Azcapotzalco, México D.F</p>
+                        </div>
+                        <div class="col-sm-3 col-md-3">
+                            <ul>
+                                <li><i class="fa fa-phone"></i> Tel. 01 55 5359.0882</li>
+                                <li><i class="fa fa-mobile"></i> Tel. 01 55 5359.0882</li>
+                                <li><i class="fa fa-envelope-o"></i> Tel. 01 55 5359.0882</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer><!-- end.Footer -->
 
         <script src="<?php echo CARPETA; ?>js/vendor/jquery-2.1.4.min.js"></script>
