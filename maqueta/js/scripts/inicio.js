@@ -11,5 +11,7 @@ $(document).ready(function() {
 		slide_easing: 'easeInOutCubic',
 		slide_speed: 800,
 		pagination: false,
+        inherit_width_from: '.wide-heigSlider',
+        inherit_height_from: '.wide-heigSlider'
     });
 });

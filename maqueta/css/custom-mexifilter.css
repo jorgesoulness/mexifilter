@@ -115,7 +115,10 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; }
 @keyframes pulsate { 0% { -webkit-transform: scale(0.1, 0.1); -moz-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); opacity: 0.0; } 50% { opacity: 1.0; } 100% { -webkit-transform: scale(1.2, 1.2); -moz-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2); opacity: 0.0; } }
 @-webkit-keyframes pulsate { 0% { -webkit-transform: scale(0.1, 0.1); -moz-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); opacity: 0.0; } 50% { opacity: 1.0; } 100% { -webkit-transform: scale(1.2, 1.2); -moz-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2); opacity: 0.0; } }
 @-moz-keyframes pulsate { 0% { -webkit-transform: scale(0.1, 0.1); -moz-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); opacity: 0.0; } 50% { opacity: 1.0; } 100% { -webkit-transform: scale(1.2, 1.2); -moz-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2); opacity: 0.0; } }
-header { width: 100%; height: 100%; position: relative; overflow: hidden; padding: 0; margin: 0; background: white; }
+/*=================
+=== h e a d e r ===
+===================*/
+header { width: 100%; height: 100%; min-height: 500px; position: relative; overflow: hidden; padding: 0; margin: 0; background: white; }
 .contHeaderTools { width: 100%; height: auto; padding: 10px 0px; margin: 0; position: absolute; z-index: 2; top: 0; left: 0; }
 .contHeaderTools .logo h1 { width: 100%; height: auto; margin-top: 10px; padding: 0; text-align: center; color: black; }
 .contHeaderTools .logo h1 a { width: 100%; height: auto; margin-bottom: 0px; padding: 0; display: block; }
@@ -143,12 +146,26 @@ header { width: 100%; height: 100%; position: relative; overflow: hidden; paddin
 .slideContainer p { text-align: left; }
 a.btn_mxGenerci { background: #28166f; border-color: #1d0f55; transition: all 0.24s linear; -webkit-transition: all 0.24s linear; -moz-transition: all 0.24s linear; border-radius: 15px; }
 a.btn_mxGenerci:hover { background: #30216a; }
-
+.wide-heigSlider { height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 1; }
+/*==============
+=== m a i n ===
+================*/
 main { width: 100%; height: auto; padding: 0; margin: 0; position: relative; }
-#experiencia { background: url(../img/experiencia.png) 0% 0% no-repeat; padding: 0px 0px 0px 0px; }
-.shapeLeft { width: 0; height: 0; border-top: 400px solid red; border-right: 2000px solid transparent; position: absolute; top:0; left:0; z-index: 1; }
+#experiencia { background: #ededed url(../img/experiencia.png) 0% 100% no-repeat; padding: 0px 0px 0px 0px; height: 100%; min-height: 600px; position: relative; }
+#experiencia h2 { font-size: 2.5em; font-weight: 700; color: #4a4c5d; }
+#experiencia p { color: #4a4c5d; }
+#garantia { background: #ededed url(../img/garantia.png) 0% 50% no-repeat; background-size: cover; padding: 100px 0px 100px 0px; height: auto; position: relative; overflow: hidden; text-align: center; }
+#garantia h2 { font-size: 2.5em; font-weight: 700; color: #4a4c5d; }
+#garantia p { color: #4a4c5d; }
+#clientes { background: #fff; background-size: cover; padding: 100px 0px 100px 0px; height: auto; position: relative; overflow: hidden; }
+#clientes h2 { font-size: 2.5em; font-weight: 700; color: #4a4c5d; text-align: center; }
 .generiContent { width: 100%; height: auto; padding: 0; margin: 0; position: relative; overflow: hidden; z-index: 2; }
-
+.shapeDown { width: 100%; position: absolute; z-index: 1; left: 0; top: 0; height: 300px; background: white; }
+.shapeDown::before { content: ''; position: absolute; right: 0; bottom: -200px; width: 0; height: 0; border-top: 200px solid white; border-right: 2300px solid transparent;}
+.story { width: 100%; height: auto; position: absolute; z-index: 2; left: 0; }
+.story.up { top: 80px; }
+.story.down { bottom: 60px; }
+.story img { width: 100%; max-width: 404px; height: auto; position: absolute; z-index: 3; right: 0; top: -250px; }
 
 
 /*-------------------
@@ -170,6 +187,8 @@ main { width: 100%; height: auto; padding: 0; margin: 0; position: relative; }
 /* Diseño tableta: de 481 px a 768 px. Hereda estilos de: Diseño móvil. */
 
 @media only screen and (min-width: 481px) {
+header { min-height: 700px; }
+#experiencia { min-height: 650px; }
 
 
 /*-------------------
@@ -191,7 +210,10 @@ main { width: 100%; height: auto; padding: 0; margin: 0; position: relative; }
 /* Diseño escritorio: de 769 px hasta un máximo de 1232 px.  Hereda estilos de: Diseño móvil y Diseño tableta. */
 
 @media only screen and (min-width: 769px) {
-
+header { min-height: 780px; }
+#experiencia { min-height: 700px; }
+.story.down { bottom: 90px; }
+.story.up { top: 100px; }
 
 /*-------------------
 	C O L U M N A S   
@@ -211,7 +233,8 @@ main { width: 100%; height: auto; padding: 0; margin: 0; position: relative; }
 
 /*mediaquery desktop 2*/
 @media only screen and (min-width: 1025px) {
-
+#experiencia { min-height: 800px; }
+.story.down { bottom: 130px; }
 
 /*-------------------
 	C O L U M N A S   
@@ -231,6 +254,7 @@ main { width: 100%; height: auto; padding: 0; margin: 0; position: relative; }
 
 /*mediaquery desktop 2*/
 @media only screen and (min-width: 1281px) {
+header { min-height: 800px; }
     
 
 /*-------------------
