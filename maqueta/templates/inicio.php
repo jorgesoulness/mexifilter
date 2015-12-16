@@ -1,5 +1,50 @@
 		
 		<main>
+            <section id="headeCont" role="heading">
+                <div class="loading-container">
+                    <div class="pulse"></div>
+                </div><!-- end.loadSlide -->
+                <div class="wide-heigSlider">
+                    <div id="slides">
+                        <div class="slides-container">
+                            <li>
+                                <img src="<?php echo CARPETA; ?>img/slider_home/Slide_home.jpg" alt="Cinelli">
+                                <div class="slideContainer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-8 col-sm-offset-4 col-md-6 col-md-offset-6">
+                                                <img src="<?php echo CARPETA; ?>img/logo_mexi_slide.png" alt="">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                <a data-wow-delay="1.0s" class="btn btn-primary btn_mxGenerci wow bounceIn" href="">Contacto</a>
+                                            </div><!-- end.infoSlide -->
+                                        </div><!-- end.row -->
+                                    </div><!-- end.container -->
+                                </div>
+                            </li><!-- end.slide -->
+                            <li>
+                                <img src="<?php echo CARPETA; ?>img/slider_home/Slide_home2.jpg" alt="Surly">
+                                <div class="slideContainer">
+                                    <div class="container"> 
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-8 col-sm-offset-4 col-md-6 col-md-offset-6">
+                                                <img src="<?php echo CARPETA; ?>img/logo_mexi_slide.png" alt="">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                <a data-wow-delay="1.0s" class="btn btn-primary btn_mxGenerci wow bounceIn" href="">Contacto</a>
+                                            </div><!-- end.infoSlide -->
+                                        </div><!-- end.row -->
+                                    </div><!-- end.container -->
+                                </div>
+                            </li><!-- end.slide -->
+                        </div><!-- end.imgSlider -->
+        
+                        <nav class="slides-navigation">
+                          <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
+                          <a href="#" class="prev"><i class="fa fa-chevron-left"></i></a>
+                        </nav><!-- end.navSlider -->
+                    </div><!-- end.SliderHome -->
+                </div>
+            </section><!-- end.SectionSlider -->
+
 			<section id="experiencia" data-enllax-ratio=".1" data-enllax-direction="horizontal">
 				<div class="shapeDown"></div><!-- end.shapeDown -->
 				

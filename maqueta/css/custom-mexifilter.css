@@ -200,21 +200,49 @@ body.overflowOculta { overflow: hidden; background: #052a53; }
 #nuestrosServicios h4 { font-weight: 700; color: #28166f; text-align: center; }
 .boxNosotros { margin-bottom: 10px; }
 .boxNosotros figure { width: 100%; max-width: 250px; height: 100%; min-height: 250px; position: relative; overflow: hidden; padding: 0; margin: 0px auto 20px auto; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
-.boxNosotros figure img { width: 100%; min-width: 400px; height: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); z-index: 1; }
-.boxNosotros figure figcaption { width: 100%; height: 100%; opacity: 0; position: absolute; left: 0; top: 0; z-index: 2; background: rgba(26,58,94,0.78); transform: translate3d(0,-100%,0); -webkit-transform: translate3d(0,-100%,0); -moz-transform: translate3d(0,-100%,0); -webkit-transition: -webkit-transform 0.35s, opacity 0.35s; -moz-transition: -moz-transform 0.35s, opacity 0.35s;  transition: transform 0.35s, opacity 0.35s; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
+.boxNosotros figure img { width: 100%; min-width: 400px; height: auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); }
+.boxNosotros figure figcaption { width: 100%; height: 100%; opacity: 0; position: absolute; left: 0; top: 0; background: rgba(26,58,94,0.78); transform: translate3d(0,-100%,0); -webkit-transform: translate3d(0,-100%,0); -moz-transform: translate3d(0,-100%,0); -webkit-transition: -webkit-transform 0.35s, opacity 0.35s; -moz-transition: -moz-transform 0.35s, opacity 0.35s;  transition: transform 0.35s, opacity 0.35s; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; }
 .boxNosotros figure figcaption h5 { position: absolute; top: 50%; left: 0; width: 100%; color: #fff; font-size: 2.0em; text-align: center; -webkit-transform: translate3d(0,-50%,0); -moz-transform: translate3d(0,-50%,0); transform: translate3d(0,-50%,0); z-index: 3; }
 .boxNosotros figure:hover figcaption { transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); opacity: 1; }
 #previewProd { background: #fff; background-size: cover; padding: 80px 0px 80px 0px; height: auto; position: relative; overflow: hidden; text-align: center; }
 #previewProd h2 { font-size: 2.5em; font-weight: 700; color: #28166f; text-align: center; margin-bottom: 20px; }
 #previewProd p { color: #28166f; text-align: center; }
-.generiContent { width: 100%; height: auto; padding: 0; margin: 0; position: relative; overflow: hidden; z-index: 2; }
+#contactoContent { background: #fff url(../img/contacto.jpg); background-size: cover; padding: 0; margin: 0; width: 100%; height: 100%; min-height: 1000px; position: relative; overflow: hidden; }
+#contactoContent h2 { font-size: 2.5em; font-weight: 700; color: #fff; text-align: left; margin-bottom: 20px; }
+#contactoContent img { width: 100%; height: auto; max-width: 298px; }
+#contactoContent p { color: #fff; }
+.contactoForm p { padding: 10px; color: #254c15!important; }
+.contactoForm form input, .contactoForm form textarea { background: rgba(255,255,255,0.85); }
+.contactoForm form input:focus, .contactoForm form textarea:focus { background: rgba(255,255,255,1.0); }
+.contactoForm form button { background: rgba(255,255,255,0.2); border-color: rgba(255,255,255,0.4); transition: all 0.34s linear; -webkit-transition: all 0.34s linear; -moz-transition: all 0.34s linear; }
+.contactoForm form button:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.8); }
+#serviciosContent { background: #fff; padding: 0; margin: 0; width: 100%; height: auto; position: relative; overflow: hidden; }
+#serviciosContent .service { width: 100%; height: 350px; margin: 0; padding: 0; background: url(../img/Eyecatcher_vaso.jpg); background-size: cover; position: relative; overflow: hidden; }
+#serviciosContent .service .boxWhite { background: rgba(255,255,255,0.7); padding-bottom: 20px; }
+#serviciosContent .service .boxWhite h2 { font-size: 2.5em; font-weight: 700; color: #28166f; text-align: left; margin-bottom: 20px; }
+#serviciosContent .venta { width: 100%; height: auto; margin: 0; padding: 50px 0px; background: #fff; position: relative; overflow: hidden; }
+#serviciosContent .venta h2 { font-size: 2.5em; font-weight: 700; color: #28166f; text-align: left; margin-bottom: 20px; }
+#serviciosContent .venta img { width: 100%; height: auto; max-width: 507px; }
+#serviciosContent .venta p { color: #254c15; margin-bottom: 20px; }
+#serviciosContent .soporteCont { width: 100%; height: auto; margin: 0; padding: 50px 0px; background: url(../img/soprte.jpg); background-size: cover; position: relative; }
+#serviciosContent .soporteCont .boxWhite { padding-bottom: 20px; }
+#serviciosContent .soporteCont .boxWhite h2 { font-size: 2.5em; font-weight: 700; color: #28166f; text-align: left; margin-bottom: 20px; }
+#serviciosContent .soporteCont .boxWhite p { color: #fff; margin-bottom: 20px; }
+#serviciosContent .soporteCont .imgSoprte { position: absolute; z-index: 1; bottom: 0; left: 50px; width: 100%; max-width: 479px; height: 100%; min-height: 611px; }
+#serviciosContent .asesoriaCont { width: 100%; height: auto; margin: 0; padding: 50px 0px; background: #fff; position: relative; overflow: hidden; }
+#serviciosContent .asesoriaCont h2 { font-size: 2.5em; font-weight: 700; color: #28166f; text-align: left; margin-bottom: 20px; }
+#serviciosContent .asesoriaCont img { width: 100%; height: auto; max-width: 507px; }
+#serviciosContent .asesoriaCont p { color: #254c15; margin-bottom: 20px; }
+.generiContent { width: 100%; height: auto; padding: 50px 0px; margin: 0; position: relative; overflow: hidden; z-index: 2; }
 .shapeDown { width: 100%; position: absolute; z-index: 1; left: 0; top: 0; height: 300px; background: white; }
-.shapeDown::before { content: ''; position: absolute; right: 0; bottom: -200px; width: 0; height: 0; border-top: 200px solid white; border-right: 2300px solid transparent;}
+.shapeDown::before { content: ''; position: absolute; right: 0; bottom: -200px; width: 0; height: 0; border-top: 200px solid white; border-right: 2300px solid transparent; }
 .story { width: 100%; height: auto; position: absolute; z-index: 2; left: 0; }
 .story.up { top: 80px; }
 .story.down { bottom: 60px; }
 .story img { width: 100%; max-width: 404px; height: auto; position: absolute; z-index: 3; right: 0; top: -250px; }
 .centerImg { width: 100%; height: auto; display: block; margin: 0px auto 20px auto; padding: 0; }
+.sectionMiddle { transform: translate3d(0,-50%,0); -webkit-transform: translate3d(0,-50%,0); -moz-transform: translate3d(0,-50%,0); top: 50%; position: absolute; }
+.sectionDown { transform: translate3d(0,0,0); -webkit-transform: translate3d(0,0,0); -moz-transform: translate3d(0,0,0); bottom: 0; position: absolute; padding: 0; }
 /*=================
 === f o o t e r ===
 ===================*/
@@ -247,6 +275,7 @@ footer .logoFooter { text-align: center; margin-bottom: 10px; }
 #headeCont { min-height: 700px; }
 #experiencia { min-height: 650px; }
 .open--menu { width: 60px; height: 60px; line-height: 60px; font-size: 1.8em; margin: 8px 0px 0px 0px; }
+#serviciosContent .soporteCont .imgSoprte { max-width: 329px; height: 100%; min-height: 411px; }
 
 
 /*-------------------
@@ -274,6 +303,8 @@ footer .logoFooter { text-align: center; margin-bottom: 10px; }
 .story.up { top: 100px; }
 .open--menu { margin: 5px 0px 0px 0px; }
 .menu--content nav ul li a { font-size: 1.5em; }
+#contactoContent { min-height: 780px; }
+#serviciosContent .soporteCont .imgSoprte { max-width: 429px; height: 100%; min-height: 511px; }
 
 /*-------------------
 	C O L U M N A S   
@@ -295,6 +326,7 @@ footer .logoFooter { text-align: center; margin-bottom: 10px; }
 @media only screen and (min-width: 1025px) {
 #experiencia { min-height: 800px; }
 .story.down { bottom: 130px; }
+#serviciosContent .soporteCont .imgSoprte { max-width: 479px; height: 100%; min-height: 611px; }
 
 /*-------------------
 	C O L U M N A S   

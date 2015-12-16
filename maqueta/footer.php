@@ -4,7 +4,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-3 col-md-3 logoFooter">
-                            <a href=""><img src="<?php echo CARPETA; ?>img/logo_footer.png" alt="Mexifilter"></a>
+                            <a href="<?php echo CARPETA; ?>"><img src="<?php echo CARPETA; ?>img/logo_footer.png" alt="Mexifilter"></a>
                         </div>
                         <div class="col-sm-6 col-md-6">
                             <p>Dirección: Democracias #48 Col. San Miguel Amantla<br>C.P 02700  Azcapotzalco, México D.F</p>

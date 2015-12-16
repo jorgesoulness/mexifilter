@@ -31,10 +31,10 @@ $(document).ready(function() {
 	  	moveSlides: 1
 	});
 	$('.bx-wrapper').hover(
-            function() {
-                $('.bx-controls').addClass( "activeCotnrols" );
-            }, function() {
-                $('.bx-controls').removeClass( "activeCotnrols" );
-            }
+        function() {
+            $('.bx-controls').addClass( "activeCotnrols" );
+        }, function() {
+            $('.bx-controls').removeClass( "activeCotnrols" );
+        }
      );
 });
