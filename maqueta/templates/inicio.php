@@ -74,6 +74,8 @@
                             </div><!-- end.row -->
                         </div><!-- end.container -->
                     </div><!-- end.story -->
+
+                    <div class="overlayGray"></div>
                     
 			</section><!-- end.Experiencia -->
 			
@@ -133,7 +135,7 @@
 				</div><!-- end.GenericContent -->
 			</section><!-- end.clientes -->
 
-            <section id="testimonios" data-enllax-ratio=".5" data-enllax-direction="vertical">
+            <section id="testimonios" data-enllax-ratio=".5" data-enllax-direction="horizontal">
                 <div class="overlayBlue"></div>
                 <div class="generiContent">
                     <div class="container">

@@ -26,7 +26,7 @@
 								<div class="row">
 									<div data-wow-delay="0.4s" class="col-md-6 col-sm-6 wow fadeInLeft">
 										<h2>Nosotros</h2>
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 									</div>
 								</div><!-- end.row -->
 							</div><!-- end.container -->
@@ -43,7 +43,9 @@
 										<a data-wow-delay="0.6s" class="btn btn-primary btn_mxGenerci wow bounceIn" href="">Contacto</a>
 									</div>
 									<div data-wow-delay="0.8s" class="col-md-6 col-sm-6 wow bounceIn">
-										<img class="centerImg" src="<?php echo CARPETA; ?>img/filtroVenta.png" alt="">
+										<figure>
+											<img class="centerImg" src="<?php echo CARPETA; ?>img/filtroVenta.png" alt="">
+										</figure>
 									</div>
 								</div><!-- end.row -->
 							</div><!-- end.container -->
@@ -55,7 +57,9 @@
 							<div class="container">
 								<div class="row">
 									<div data-wow-delay="0.8s" class="col-md-6 col-sm-6 wow bounceIn">
-										<img class="centerImg" src="<?php echo CARPETA; ?>img/filtroVenta.png" alt="">
+										<figure>
+											<img class="centerImg" src="<?php echo CARPETA; ?>img/filtroVenta.png" alt="">
+										</figure>
 									</div>
 									<div data-wow-delay="0.4s" class="col-md-6 col-sm-6 wow fadeInRight">
 										<h2>Visión</h2>
@@ -77,7 +81,9 @@
 										<a data-wow-delay="0.6s" class="btn btn-primary btn_mxGenerci wow bounceIn" href="">Contacto</a>
 									</div>
 									<div data-wow-delay="0.8s" class="col-md-6 col-sm-6 wow bounceIn">
-										<img class="centerImg" src="<?php echo CARPETA; ?>img/filtroVenta.png" alt="">
+										<figure>
+											<img class="centerImg" src="<?php echo CARPETA; ?>img/filtroVenta.png" alt="">
+										</figure>
 									</div>
 								</div><!-- end.row -->
 							</div><!-- end.container -->
