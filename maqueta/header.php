@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', '1');
-$srvr="http://".$_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']."/pv_mexifilter/maqueta/";//Cambiar path & quitar cuando se haga la integración.
+$srvr="http://".$_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']."/pvmexifilter/maqueta/";//Cambiar path & quitar cuando se haga la integración.
 define("CARPETA", $srvr);
 ?>
 <!DOCTYPE html>
@@ -30,6 +30,7 @@ define("CARPETA", $srvr);
         <link rel="stylesheet" href="<?php echo CARPETA; ?>css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo CARPETA; ?>js/plugins/stylesheets/superslides.css">
         <link rel="stylesheet" href="<?php echo CARPETA; ?>css/jquery.bxslider.css">
+        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/collage/transitions.css">
         
         <script src="<?php echo CARPETA; ?>js/vendor/modernizr-2.8.3.min.js"></script>
         
@@ -49,7 +50,7 @@ define("CARPETA", $srvr);
 			  		<div data-wow-delay="0.4s"  class="col-xs-8 col-sm-8 col-md-9 hidden-xs wow fadeInDown">
 			  			<div class="searchCont">
 					  		<form method="get" name="buscaForm" id="buscaForm" action="/search" class="search-form">
-						  		<input type="text" id="search-form" name="q" placeholder="Buscar..."required/>
+						  		<input type="text" id="search-form" name="q" placeholder="Buscar..." required/>
 						  		<button type="submit" value="search"><i class="fa fa-search"></i></button>
 					  		</form>
 				  		</div><!-- end.Search -->
@@ -71,10 +72,10 @@ define("CARPETA", $srvr);
 			               </div>
 			               <h3>Menú</h3>
 			               <ul>
-			                   <li><a href="">Nosotros</a></li>
+			                   <li><a href="<?php echo CARPETA; ?>nostros/">Nosotros</a></li>
 			                   <li><a href="">Productos</a></li>
 			                   <li><a href="<?php echo CARPETA; ?>servicios/">Servicios</a></li>
-			                   <li><a href="">Galería</a></li>
+			                   <li><a href="<?php echo CARPETA; ?>galeria/">Galería</a></li>
 			                   <li><a href="<?php echo CARPETA; ?>contacto/">Contacto</a></li>
 			               </ul>
 			            </nav>
