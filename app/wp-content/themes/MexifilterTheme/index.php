@@ -1,8 +1,32 @@
-<?php require_once("header.php"); ?>
-        <?php if(isset($_GET['sec']) && $_GET['sec'] != '') { ?>
+<?php
+/**
+ * The main template file
+ *
+ * @package WordPress
+ * @subpackage mexifilter
+ * @since Mexifilter Theme 1.0
+ */
+
+get_header(); ?>
         
-        <?php require_once 'templates/' . $_GET['sec'] . '.php'; ?>
-        <?php } else { ?>
-        <?php require_once 'templates/inicio.php'; ?>
-        <?php } ?>
-<?php require_once("footer.php"); ?>
+        <main role="main"><!--ss-->
+                
+        <?php if ( have_posts() ) : ?>
+        
+        <?php
+			// Start the loop.
+			while ( have_posts() ) : the_post();
+				get_template_part( 'content', get_post_format() );
+
+			// End the loop.
+			endwhile; else :
+
+			get_template_part( 'content', 'none' );
+
+		endif;
+		?>
+		
+        </main>
+
+
+<?php get_footer(); ?>

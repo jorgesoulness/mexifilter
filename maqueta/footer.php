@@ -35,6 +35,7 @@
         <script src="<?php echo CARPETA; ?>js/plugins/collage/jquery.collagePlus.min.js"></script>
         <script src="<?php echo CARPETA; ?>js/plugins/collage/jquery.removeWhitespace.min.js"></script>
         <script src="<?php echo CARPETA; ?>js/plugins/collage/jquery.collageCaption.min.js"></script>
+        <script src="<?php echo CARPETA; ?>js//plugins/jquery.validate.min.js"></script>
         <script src="<?php echo CARPETA; ?>js/plugins.js"></script>
         <script src="<?php echo CARPETA; ?>js/main.js"></script>
         <?php if(isset($_GET['sec']) && $_GET['sec'] != '') { ?><script src="<?php echo CARPETA; ?>js/scripts/<?php echo $_GET['sec'].'.js'; ?>"></script>

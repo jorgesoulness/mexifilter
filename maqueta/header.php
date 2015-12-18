@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors', '1');
-$srvr="http://".$_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']."/pv_mexifilter/maqueta/";//Cambiar path & quitar cuando se haga la integración.
+$srvr="http://".$_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']."/pvmexifilter/maqueta/";//Cambiar path & quitar cuando se haga la integración.
 define("CARPETA", $srvr);
 ?>
 <!DOCTYPE html>

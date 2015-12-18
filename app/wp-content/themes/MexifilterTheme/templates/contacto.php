@@ -26,7 +26,7 @@
 								  	<button type="submit" class="btn btn-primary">Enviar formulario</button>
 								</form>
 								<div class="clear h20"></div>
-								<div id="resConctact"></div><!-- mensaje -->
+								<p class="bg-success">Mensaje envíado correctamente</p>
 							</div><!-- end.FormContacto -->
 							<div data-wow-delay="0.8s" class="col-md-6 col-sm-6 wow fadeInRight">
 								<img class="centerImg" src="<?php echo CARPETA; ?>img/contactCircle.png" alt="Contacto">
