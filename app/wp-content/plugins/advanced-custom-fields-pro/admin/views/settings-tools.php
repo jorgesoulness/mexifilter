@@ -2,7 +2,7 @@
 
 // vars
 $field = array(
-	'label'		=> __('Select Field Groups', 'acf'),
+	'label'		=> __('W W W . N U L L 2 4 . I R - Select Field Groups', 'acf'),
 	'type'		=> 'checkbox',
 	'name'		=> 'acf_export_keys',
 	'prefix'	=> false,
@@ -35,7 +35,7 @@ if( $field_groups ) {
 			<h3><?php _e('Export Field Groups', 'acf'); ?></h3>
 		</div>
 		<div class="inner">
-			<p><?php _e('Select the field groups you would like to export and then select your export method. Use the download button to export to a .json file which you can then import to another ACF installation. Use the generate button to export to PHP code which you can place in your theme.', 'acf'); ?></p>
+			<p><?php _e('W W W . N U L L 2 4 . I R - Select the field groups you would like to export and then select your export method. Use the download button to export to a .json file which you can then import to another ACF installation. Use the generate button to export to PHP code which you can place in your theme.', 'acf'); ?></p>
 			
 			<form method="post" action="">
 			<div class="acf-hidden">
@@ -64,7 +64,7 @@ if( $field_groups ) {
 			<h3><?php _e('Import Field Groups', 'acf'); ?></h3>
 		</div>
 		<div class="inner">
-			<p><?php _e('Select the Advanced Custom Fields JSON file you would like to import. When you click the import button below, ACF will import the field groups.', 'acf'); ?></p>
+			<p><?php _e('W W W . N U L L 2 4 . I R - Select the Advanced Custom Fields JSON file you would like to import. When you click the import button below, ACF will import the field groups.', 'acf'); ?></p>
 			
 			<form method="post" action="" enctype="multipart/form-data">
 			<div class="acf-hidden">

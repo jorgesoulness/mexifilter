@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Advanced Custom Fields Pro
+Plugin Name: Advanced Custom Fields Pro - shared on themelord.com
 Plugin URI: http://www.advancedcustomfields.com/
 Description: Customise WordPress with powerful, professional and intuitive fields
 Version: 5.3.0

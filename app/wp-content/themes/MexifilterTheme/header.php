@@ -41,13 +41,13 @@
 	    <meta property="og:image" content="<?php if ( has_post_thumbnail() ) { $imagee = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),  'homepage-facebook' ); echo $urll = $imagee['0']; } ?>">
 	    <meta property="og:description" content="<?php the_field('descripcion', $post->ID); ?>">
 	    <?php else: ?>
-	    <meta property="og:title" content="Maruchan México">
+	    <meta property="og:title" content="Mexifilter México">
 	    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/tile.png">
 	    <meta property="og:description" content="<?php bloginfo('descripcion'); ?>">
 	    <?php endif; ?>
 	    <meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@MaruchanMx">
-		<meta name="twitter:title" content="Maruchan México">
+		<meta name="twitter:site" content="@Mexifilter">
+		<meta name="twitter:title" content="Mexifilter México">
 		<meta name="twitter:description" content="<?php echo get_field('descripcion', $post->ID) ?>">
 		<meta name="twitter:image" content="<?php if ( has_post_thumbnail() ) { $imgTW = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ),  'homepage-twitter' ); echo $liga = $imgTW['0']; } ?>">
 
@@ -83,10 +83,10 @@
 			  		</div><!-- end.Logo -->
 			  		<div data-wow-delay="0.4s"  class="col-xs-8 col-sm-8 col-md-9 hidden-xs wow fadeInDown">
 			  			<div class="searchCont">
-					  		<form method="get" name="buscaForm" id="buscaForm" action="/search" class="search-form">
-						  		<input type="text" id="search-form" name="q" placeholder="Buscar..." required/>
-						  		<button type="submit" value="search"><i class="fa fa-search"></i></button>
-					  		</form>
+					  		<form method="get" id="searchform" class="search-form" action="<?php bloginfo('home'); ?>/">
+			                    <input type="search" name="s" id="search-form" placeholder="Buscar...">
+			                    <button type="submit" name="buscar" id="buscar"><i class="fa fa-search"></i></button>
+			                </form>
 				  		</div><!-- end.Search -->
 			  		</div><!-- end.Menu -->
 			  		<div class="col-xs-9 col-sm-1 col-md-1" >
@@ -105,23 +105,16 @@
 			                   <a class="CloseMenu"><i class="fa fa-close"></i></a>
 			               </div>
 			               <h3>Menú</h3>
-			               <!-- <ul>
-			                   <li><a href="<?php echo get_template_directory_uri(); ?>/nostros/">Nosotros</a></li>
-			                   <li><a href="<?php echo get_template_directory_uri(); ?>/productos/">Productos</a></li>
-			                   <li><a href="<?php echo get_template_directory_uri(); ?>/servicios/">Servicios</a></li>
-			                   <li><a href="<?php echo get_template_directory_uri(); ?>/galeria/">Galería</a></li>
-			                   <li><a href="<?php echo get_template_directory_uri(); ?>/contacto/">Contacto</a></li>
-			               </ul> -->
-			               <?php wp_nav_menu( array('container' => false, 'items_wrap' => '<ul id="menu-principal">%3$s</ul>', 'theme_location' => 'menu-principal') ); ?>
+			               <?php wp_nav_menu( array('container' => false, 'items_wrap' => '<ul id="menu-principal">%3$s</ul>', 'theme_location' => 'primary') ); ?>
 			            </nav>
 				    </div>
 				    <div class="col-md-12">
 			            <h3 class="visible-xs">Buscar</h3>
 			            <div class="searchCont visible-xs">
-							<form method="get" name="buscaForm" id="buscaForm" action="/search" class="search-form">
-								<input type="text" id="search-form" name="q" placeholder="Buscar..." required/>
-								<button type="submit" value="search"><i class="fa fa-search"></i></button>
-							</form>
+			            	<form method="get" id="searchform" class="search-form" action="<?php bloginfo('home'); ?>/">
+			                    <input type="search" name="s" id="search-form" placeholder="Buscar...">
+			                    <button type="submit" name="buscar" id="buscar"><i class="fa fa-search"></i></button>
+			                </form>
 						</div><!-- end.Search -->
 			    	</div>
 			    	<div class="clear"></div>

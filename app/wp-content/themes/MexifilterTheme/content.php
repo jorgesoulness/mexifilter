@@ -2,7 +2,6 @@
 /**
  * The default template for displaying content
  *
- * Used for both single and index/archive/search.
  *
  * @package WordPress
  * @subpackage mexifilter
@@ -60,7 +59,7 @@
 
 <?php if( have_rows('contenido_inicio') ): ?>
 
-			<section id="experiencia" data-enllax-ratio=".1" data-enllax-direction="horizontal">
+			<section id="experiencia">
 				<div class="shapeDown"></div><!-- end.shapeDown -->
 				
 					<div class="story up">
@@ -112,7 +111,7 @@
                     
 			</section><!-- end.Experiencia -->
 			
-			<section id="garantia" data-enllax-ratio="-.1" data-enllax-direction="horizontal">
+			<section id="garantia">
 				<div class="overlayGray"></div>
 				<div class="generiContent">
 					<div class="container">
@@ -166,7 +165,7 @@
 				</div><!-- end.GenericContent -->
 			</section><!-- end.clientes -->
 
-            <section id="testimonios" data-enllax-ratio=".5" data-enllax-direction="horizontal">
+            <section id="testimonios" data-enllax-ratio=".2" data-enllax-direction="vertical">
                 <div class="overlayBlue"></div>
                 <div class="generiContent">
                     <div class="container">
@@ -201,7 +200,7 @@
 				            <?php $i = 1; while ( have_rows('contenido_inicio') ) : the_row(); ?>
                             	<?php if( get_row_layout() == 'servicios' ): ?>
 
-				            <div data-wow-delay="1.0s" class="col-md-4 boxNosotros wow fadeInUp">
+				            <div class="col-md-4 boxNosotros wow fadeInUp" data-wow-delay="0.8s">
 					            <figure>
 					            <?php $imageServ = get_sub_field('imagen_del_servicio'); if($imageServ): ?>
 					            	<img src="<?php echo $imageServ['url']; ?>" alt="<?php echo $imageServ['alt']; ?>">
@@ -237,14 +236,15 @@
 				            </div>
 				            <div class="clear h30"></div>
 				            <div class="col-md-12">
-					            <ul class="sliderProd">
+					            <?php query_posts('category_name=productos&order_by=DESC&post_per_page=-1'); ?>
+								<ul class="sliderProd">
+									<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+						            <li><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full'); ?></a></li>
+						            <?php endwhile; else: ?>
 						            <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/algunprod.jpg" alt="Producto"></a></li>
-						            <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/algunprod.jpg" alt="Producto"></a></li>
-						            <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/algunprod.jpg" alt="Producto"></a></li>
-						            <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/algunprod.jpg" alt="Producto"></a></li>
-						            <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/algunprod.jpg" alt="Producto"></a></li>
-						            <li><a href=""><img src="<?php echo get_template_directory_uri(); ?>/img/algunprod.jpg" alt="Producto"></a></li>
+						        	<?php endif; ?>
 					            </ul>
+					            <?php wp_reset_query(); ?>
 				            </div>
 				            <div class="clear h20"></div>
 				            <div data-wow-delay="0.8s" class="col-md-4 col-md-offset-4 wow bounceIn">
